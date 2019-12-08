@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MvpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Password"/>
+
+     <Button
+         style="@style/Widget.AppCompat.Button.Colored"
+         android:id="@+id/btn_login"
+         android:hint="LOGIN"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
