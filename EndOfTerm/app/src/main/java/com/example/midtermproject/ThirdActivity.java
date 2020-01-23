@@ -26,8 +26,8 @@ public class ThirdActivity extends AppCompatActivity {
         rating.setOnRatingBarChangeListener(
                 new RatingBar.OnRatingBarChangeListener() {
                     @Override
-                    public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                        text_show.setText("Value: " + String.valueOf(rating));
+                    public void onRatingChanged(RatingBar ratingBar, float v, boolean fromUser) {
+                        text_show.setText("Value: " + String.valueOf(v));
                     }
                 }
         );

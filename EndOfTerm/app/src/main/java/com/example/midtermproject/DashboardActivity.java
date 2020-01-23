@@ -8,16 +8,37 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 
 public class DashboardActivity extends AppCompatActivity {
+
+    private Button download;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+        addListenerOnButton();
+    }
+
+    public void addListenerOnButton (){
+
+        download = (Button)findViewById(R.id.button3);
+
+        download.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(".MvpActivity");
+                        startActivity(intent);
+                    }
+                }
+        );
+
     }
 
     public void Change (View view){

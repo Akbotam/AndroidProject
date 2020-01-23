@@ -19,16 +19,22 @@
 
         <RatingBar
             android:id="@+id/rate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="7"
+            android:stepSize="1" />
 
         <TextView
             android:id="@+id/txtshow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50sp"
+            android:layout_marginTop="20sp"
             android:layout_marginRight="300sp"
-            android:text="TextView" />
+            android:text="Eminem
+                          Artist of the Year
+                          Favorite Pop/Rock Male Artist
+                          Favorite Rap/Hip-Hop Male Artist" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

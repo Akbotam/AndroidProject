@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -19,6 +18,33 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
+
+    /*private Button btnLogin;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        addListenerOnButton();
+    }
+
+    public void addListenerOnButton () {
+        btnLogin = (Button)findViewById(R.id.btn_login);
+
+        btnLogin.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(".DashBoardActivity");
+                        startActivity(i);
+
+
+                    }
+                });
+
+    } */
+
+
 
     EditText etEmail, etPassword;
     TextView tvRegister;
@@ -51,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String Email = etEmail.getText().toString();
                 String Password = etPassword.getText().toString();
 

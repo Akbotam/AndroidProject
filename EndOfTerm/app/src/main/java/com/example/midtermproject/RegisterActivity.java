@@ -38,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister = (Button) findViewById(R.id.btn_register);
 
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnRegister.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String Name = etName.getText().toString();
